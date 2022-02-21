@@ -8,7 +8,7 @@ const CityContext = createContext()
 export const CityProvider = ({children}) => {
 
     const [city, setCity] = useState(cities[0])
-    const [cityWeather, setCityWeather] = useState(starterWeather)
+    const [cityWeather, setCityWeather] = useState([])
     const weekDays = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun","Mon"]
     const day = new Date()
     const today = day.getDay()
