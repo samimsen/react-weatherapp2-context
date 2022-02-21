@@ -1,7 +1,7 @@
 import { createContext ,useState, useContext, useEffect } from "react";
 import { cities } from "../city-list/cities";
 import { getCityWeather, getWeather } from "../api/weather";
-import { starterWeather } from "../api/starterWeather";
+
 
 const CityContext = createContext()
 
