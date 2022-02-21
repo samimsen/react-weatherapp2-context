@@ -2,7 +2,7 @@ export const cities = [
     {
     "id": 1,
     "name": "Adana",
-    "latitude": "37.0000",
+    "latitude": "37.7648",
     "longitude": "38.2786",
     "population": 2183167,
     "region": "Akdeniz"
