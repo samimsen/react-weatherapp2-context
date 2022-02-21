@@ -17,7 +17,6 @@ export const CityProvider = ({children}) => {
         const getWeatherData = async () => {
             const cityWeather = await getWeather()
             setCityWeather(cityWeather)
-            console.log(cityWeather)
         }
         getWeatherData()
     },[])
@@ -26,7 +25,6 @@ export const CityProvider = ({children}) => {
         const getWeatherData = async () => {
             const cityWeather = await getCityWeather(city.latitude,city.longitude)
             setCityWeather(cityWeather)
-            console.log(cityWeather)
         }
         getWeatherData()
     },[city])
