@@ -1,3 +1,8 @@
+* {
+  margin: 2px;
+  padding: 0;
+}
+
 li {
   list-style-type: none;
   display: block;
@@ -10,19 +15,29 @@ img {
   display: block;
 }
 
+.weather {
+  padding: 5px;
+}
+
 .current-day {
-  border: 1px solid grey;
+  border: 1px solid rgb(199, 197, 197);
   border-radius: 5px;
 }
 
+.temp-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .max {
-  color: black;
+  color: rgb(94, 91, 91);
 }
 
 .min {
-  color: gray;
+  color: rgb(177, 173, 173);
 }
 
-.gray {
-  color: gray;
+.day {
+  color: rgb(94, 91, 91);
+  text-align: center;
 }

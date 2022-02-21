@@ -13,13 +13,15 @@ function Weather() {
             { 
                 totalArray.map((day,index) => (
                     <li key={index}>
-                        <div className={index === totalArray.indexOf(`${totalArray[0]}`) ? "current-day": null}>
-                            <span className="gray">{day}</span>
-                            <img src={`http://openweathermap.org/img/w/${cityWeather.daily[index].weather[0].icon}.png`} alt={cityWeather.daily[index].weather[0].main}/> 
-                            <div className="temp-container">
-                                <span className="max">{`${parseInt(cityWeather.daily[index].temp.max)}°`}</span>
-                                <span className="max">{`${parseInt(cityWeather.daily[index].temp.min)}°`}</span>
-                            </div> 
+                        <div className={index === totalArray.indexOf(`${totalArray[0]}`) ? "day current-day": "day"}>
+                            <span className="day">{day}</span>
+                            <div className='weather'>
+                                <img src={`http://openweathermap.org/img/w/${cityWeather.daily[index].weather[0].icon}.png`} alt={cityWeather.daily[index].weather[0].main}/> 
+                                <div className="temp-container">
+                                    <span className="temp max">{`${parseInt(cityWeather.daily[index].temp.max)}°`}</span>
+                                    <span className="temp min">{`${parseInt(cityWeather.daily[index].temp.min)}°`}</span>
+                                </div>
+                            </div>
                         </div>
                     </li>  
                 ))
